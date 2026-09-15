@@ -2,39 +2,17 @@
 
 
 
-A simple web app to split shared expenses between friends and see who owes who.
+A small Python app that splits shared costs between a group of people and works out who owes who.
 
 
 
-\## What it does
-
-\- Add people to a group
-
-\- Log who paid for what, and how much
-
-\- Automatically calculates each person's fair share
-
-\- Shows who owes money and who should be paid back
+I built this after getting tired of doing this math manually whenever a group of us split a bill, rent, or a trip. You add people, log who paid for what, and it tells you the fairest way to settle up.
 
 
 
-\## Built with
-
-\- Python
-
-\- Streamlit
+Built with Python and Streamlit.
 
 
 
-\## How to run it
-
-1\. Install requirements: `pip install streamlit`
-
-2\. Run: `streamlit run app.py`
-
-
-
-\## Why I built this
-
-I wanted a simple, practical tool for a real problem — splitting costs fairly between a group of people — while practicing Python.
+\*\*To run it locally:\*\*
 

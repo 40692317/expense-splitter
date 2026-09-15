@@ -16,3 +16,7 @@ Built with Python and Streamlit.
 
 \*\*To run it locally:\*\*
 
+
+
+!\[Expense Splitter screenshot](screenshot.png)
+

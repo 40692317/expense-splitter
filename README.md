@@ -18,5 +18,11 @@ Built with Python and Streamlit.
 
 
 
+1\. Install requirements: `pip install streamlit`
+
+2\. Run the app: `streamlit run app.py`
+
+
+
 !\[Expense Splitter screenshot](screenshot.png)
 

@@ -1,4 +1,5 @@
 import streamlit as st
+from splitter import calculate_balances
 
 st.title("Expense Splitter")
 st.write("Split shared costs with friends and see who owes who.")
@@ -38,12 +39,10 @@ if people_input:
         st.write(f"Each person's fair share: {share:.2f}")
 
         st.subheader("Who owes who")
-        paid_by_person = {p: 0 for p in people}
-        for e in st.session_state.expenses:
-            paid_by_person[e["payer"]] += e["amount"]
+        balances = calculate_balances(people, st.session_state.expenses)
 
         for p in people:
-            balance = paid_by_person[p] - share
+            balance = balances[p]
             if balance > 0:
                 st.write(f"{p} should receive {balance:.2f}")
             elif balance < 0:
